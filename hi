@@ -6,3 +6,4 @@ echo "hello world 5 "
 echo "ar"
 echo "hi again"
 echo "hello again"
+date 
