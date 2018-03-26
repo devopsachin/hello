@@ -8,3 +8,4 @@ echo "hi again"
 echo "hello again"
 date
 time  
+date 
