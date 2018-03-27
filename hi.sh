@@ -10,3 +10,4 @@ date
 time  
 date 
 echo "hi testing"
+date
