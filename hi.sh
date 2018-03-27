@@ -9,3 +9,4 @@ echo "hello again"
 date
 time  
 date 
+echo "hi testing"
