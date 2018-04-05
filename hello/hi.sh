@@ -1,0 +1,13 @@
+echo "hello world "
+echo "heloo world ho"
+echo "hello folks"
+echo "hello world 2"
+echo "hello world 5 "
+echo "ar"
+echo "hi again"
+echo "hello again"
+date
+time  
+date 
+echo "hi testing"
+date
