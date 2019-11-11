@@ -1,0 +1,6 @@
+Hi All
+This is the information regarding free memeory of Vm1
+
+total used free
+
+985 614 371

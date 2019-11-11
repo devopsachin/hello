@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+free -m > /var/www/html/memory.txt
+
+df -h > /var/www/html/storage.txt
+
+paste -d "," /var/www/html/memory.txt /var/www/html/storage.txt  > /var/www/html/sample.csv
+
+sed -i '1d MEMORY,STORAGE' /var/www/html/sample.csv
+
