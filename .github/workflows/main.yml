@@ -11,20 +11,9 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    - name: Set AKS context
-      uses: azure/aks-set-context@v3
-      with:
-        resource-group: ${{ secrets.AZURE_RESOURCE_GROUP }}
-        cluster-name: ${{ secrets.AKS_CLUSTER_NAME }}
 
     - name: Run kubectl get all
       run: |
+        az account set --subscription 6a7163f8-b2ab-4734-b784-c8ac54dea875
+        az aks get-credentials --resource-group rg-svcp-lab-sr --name test-aks --overwrite-existing
         kubectl get all --all-namespaces
