@@ -15,5 +15,5 @@ jobs:
     - name: Run kubectl get all
       run: |
         az account set --subscription 6a7163f8-b2ab-4734-b784-c8ac54dea875
-        az aks get-credentials --resource-group rg-svcp-lab-sr --name test-aks --overwrite-existing
+        az aks get-credentials --resource-group rg-svcp-lab-sr --name aks-test --overwrite-existing
         kubectl get all --all-namespaces
